@@ -194,12 +194,8 @@ function renderFooter(r) {
     </div>
     <div class="footer-bottom">
       <p>© 2026 Nova Research Group. All rights reserved. Designed by webflyit</p>
-      <p style="margin-top:6px;font-size:.8rem;opacity:.7;">Developed by <a href="https://bhtechhub.com" target="_blank" rel="noopener" style="color:inherit;">BHTECHHUB.com</a> | Basharat Hussain | 03392202424</p>
       <a href="#" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
-  </div>
-  <div class="footer-disclosure">
-    This site may contain affiliate links. When you click through and sign up or make a purchase, we may earn a commission at no additional cost to you.
   </div>
 </footer>`;
 }
