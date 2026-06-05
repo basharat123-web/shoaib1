@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Nova Research Group</title>
-  <meta name="description" content="Nova Research Group — Data-Driven Insights That Power Smarter Decisions. Global market research and consulting connecting users with survey opportunities.">
-  <meta property="og:title" content="Home - Nova Research Group">
+  <title>Home - Axiom Research Group</title>
+  <meta name="description" content="Axiom Research Group — Data-Driven Insights That Power Smarter Decisions. Global market research and consulting connecting users with survey opportunities.">
+  <meta property="og:title" content="Home - Axiom Research Group">
   <meta property="og:description" content="Data-Driven Insights That Power Smarter Decisions. Global market research and consulting.">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://novaresearchgroup.site/">
+  <link rel="canonical" href="https://axiomresearchgroup.site/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,6 +16,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<div id="page-loader">
+  <div class="loading">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
 
 <div id="site-header"></div>
 
@@ -92,7 +102,7 @@
     </div>
   </section>
 
-  <!-- ══ 2. ABOUT NRG ══ -->
+  <!-- ══ 2. About ARG ══ -->
   <section class="section">
     <div class="container">
       <div class="about-grid">
@@ -116,11 +126,11 @@
           </div>
         </div>
         <div class="about-content">
-          <span class="section-kicker">About Nova Research Group</span>
+          <span class="section-kicker">About Axiom Research Group</span>
           <h2>Trusted Research Partner for Leading Organizations</h2>
-          <p>Based in Buffalo, New York, Nova Research Group has spent over two decades helping organizations understand consumer behaviour, psychology, and marketing strategy. We combine rigorous methodology with cutting-edge technology to deliver insights that drive real business outcomes.</p>
+          <p>Based in Buffalo, New York, Axiom Research Group has spent over two decades helping organizations understand consumer behaviour, psychology, and marketing strategy. We combine rigorous methodology with cutting-edge technology to deliver insights that drive real business outcomes.</p>
           <p>Our platform connects real users with meaningful survey opportunities while simultaneously providing enterprise-grade research services to Fortune 500 companies and innovative startups alike.</p>
-          <a href="about-us.html" class="btn btn-primary" style="margin-top:8px;"><i class="fa-solid fa-arrow-right"></i> Learn More about NRG</a>
+          <a href="about-us.html" class="btn btn-primary" style="margin-top:8px;"><i class="fa-solid fa-arrow-right"></i> Learn More About ARG</a>
         </div>
       </div>
     </div>
@@ -402,7 +412,7 @@
         <h2>Ready to Transform Your Business with Data?</h2>
         <p>Whether you're a business looking for research expertise or an individual wanting to share your opinions, we have the right solution for you.</p>
         <div class="cta-btns">
-          <a href="contact-nrg.html" class="btn btn-white btn-lg"><i class="fa-solid fa-calendar-check"></i> Request Consultation</a>
+          <a href="contact-ARG.html" class="btn btn-white btn-lg"><i class="fa-solid fa-calendar-check"></i> Request Consultation</a>
           <a href="surveys.html" class="btn btn-outline-white btn-lg">Explore Surveys</a>
         </div>
       </div>
@@ -415,5 +425,12 @@
 
 <script>const ROOT = './';</script>
 <script src="js/main.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    var loader = document.getElementById('page-loader');
+    loader.classList.add('loader-hidden');
+    loader.addEventListener('transitionend', function () { loader.remove(); });
+  });
+</script>
 </body>
 </html>

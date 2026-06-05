@@ -1,5 +1,5 @@
 /* ============================================================
-   NRG — Nova Research Group | Main JavaScript v1.0
+   ARG — Axiom Research Group | Main JavaScript v1.0
    ============================================================ */
 
 /* ROOT is set inline in each page before this script loads:
@@ -27,8 +27,32 @@ function renderHeader(r) {
 <header class="site-header">
   <div class="container header-inner">
     <a href="${r}index.html" class="logo">
-      <span class="logo-nrg">NRG</span>
-      <span class="logo-name">Nova Research Group</span>
+      <svg class="logo-svg" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg" aria-label="Axiom Research Group">
+        <defs>
+          <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0d1b3e"/>
+            <stop offset="100%" stop-color="#1565c0"/>
+          </linearGradient>
+          <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1565c0"/>
+            <stop offset="100%" stop-color="#26a69a"/>
+          </linearGradient>
+        </defs>
+        <!-- Outer A triangle -->
+        <polygon points="24,44 44,8 64,44" fill="url(#ag)" opacity="0.95"/>
+        <!-- Inner A teal accent -->
+        <polygon points="30,44 44,18 58,44" fill="none" stroke="url(#tg)" stroke-width="2.5"/>
+        <!-- Circuit nodes -->
+        <circle cx="44" cy="8" r="2.5" fill="#26a69a"/>
+        <circle cx="33" cy="32" r="2" fill="#26a69a"/>
+        <circle cx="55" cy="32" r="2" fill="#26a69a"/>
+        <line x1="44" y1="10" x2="33" y2="30" stroke="#26a69a" stroke-width="1" opacity="0.7"/>
+        <line x1="44" y1="10" x2="55" y2="30" stroke="#26a69a" stroke-width="1" opacity="0.7"/>
+        <!-- AXIOM text -->
+        <text x="74" y="32" font-family="Montserrat,sans-serif" font-size="22" font-weight="800" fill="#0d1b3e" letter-spacing="1">AXIOM</text>
+        <!-- RESEARCH GROUP text -->
+        <text x="75" y="46" font-family="Montserrat,sans-serif" font-size="9" font-weight="700" fill="#1565c0" letter-spacing="2.5">RESEARCH GROUP</text>
+      </svg>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <ul class="nav-list">
@@ -81,7 +105,7 @@ function renderHeader(r) {
         <li><a href="${r}surveys.html">Surveys</a></li>
         <li><a href="${r}news.html">News</a></li>
         <li><a href="${r}blogs.html">Blogs</a></li>
-        <li><a href="${r}about-us.html">About NRG</a></li>
+        <li><a href="${r}about-us.html">About ARG</a></li>
       </ul>
     </nav>
     <a href="${r}contact-nrg.html" class="btn btn-primary nav-cta">Contact us</a>
@@ -93,8 +117,32 @@ function renderHeader(r) {
 <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
   <div class="mobile-nav-header">
     <a href="${r}index.html" class="logo">
-      <span class="logo-nrg">NRG</span>
-      <span class="logo-name">Nova Research Group</span>
+      <svg class="logo-svg" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg" aria-label="Axiom Research Group">
+        <defs>
+          <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0d1b3e"/>
+            <stop offset="100%" stop-color="#1565c0"/>
+          </linearGradient>
+          <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1565c0"/>
+            <stop offset="100%" stop-color="#26a69a"/>
+          </linearGradient>
+        </defs>
+        <!-- Outer A triangle -->
+        <polygon points="24,44 44,8 64,44" fill="url(#ag)" opacity="0.95"/>
+        <!-- Inner A teal accent -->
+        <polygon points="30,44 44,18 58,44" fill="none" stroke="url(#tg)" stroke-width="2.5"/>
+        <!-- Circuit nodes -->
+        <circle cx="44" cy="8" r="2.5" fill="#26a69a"/>
+        <circle cx="33" cy="32" r="2" fill="#26a69a"/>
+        <circle cx="55" cy="32" r="2" fill="#26a69a"/>
+        <line x1="44" y1="10" x2="33" y2="30" stroke="#26a69a" stroke-width="1" opacity="0.7"/>
+        <line x1="44" y1="10" x2="55" y2="30" stroke="#26a69a" stroke-width="1" opacity="0.7"/>
+        <!-- AXIOM text -->
+        <text x="74" y="32" font-family="Montserrat,sans-serif" font-size="22" font-weight="800" fill="#0d1b3e" letter-spacing="1">AXIOM</text>
+        <!-- RESEARCH GROUP text -->
+        <text x="75" y="46" font-family="Montserrat,sans-serif" font-size="9" font-weight="700" fill="#1565c0" letter-spacing="2.5">RESEARCH GROUP</text>
+      </svg>
     </a>
     <button class="mobile-nav-close" id="mobileClose" aria-label="Close menu">
       <i class="fa-solid fa-xmark"></i>
@@ -142,7 +190,7 @@ function renderHeader(r) {
     <li><a href="${r}surveys.html">Surveys</a></li>
     <li><a href="${r}news.html">News</a></li>
     <li><a href="${r}blogs.html">Blogs</a></li>
-    <li><a href="${r}about-us.html">About NRG</a></li>
+    <li><a href="${r}about-us.html">About ARG</a></li>
   </ul>
   <a href="${r}contact-nrg.html" class="btn btn-primary" style="margin-top:24px;display:flex;justify-content:center;">Contact us</a>
 </div>`;
@@ -156,10 +204,29 @@ function renderFooter(r) {
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="${r}index.html" class="logo" style="display:inline-flex;margin-bottom:0;">
-          <span class="logo-nrg" style="-webkit-text-fill-color:#fff;color:#fff;">NRG</span>
-          <span class="logo-name" style="color:rgba(255,255,255,.8);">Nova Research Group</span>
+          <svg class="logo-svg" viewBox="0 0 220 52" xmlns="http://www.w3.org/2000/svg" aria-label="Axiom Research Group">
+            <defs>
+              <linearGradient id="agf" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#90caf9"/>
+              </linearGradient>
+              <linearGradient id="tgf" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#90caf9"/>
+                <stop offset="100%" stop-color="#4dd0c4"/>
+              </linearGradient>
+            </defs>
+            <polygon points="24,44 44,8 64,44" fill="url(#agf)" opacity="0.95"/>
+            <polygon points="30,44 44,18 58,44" fill="none" stroke="url(#tgf)" stroke-width="2.5"/>
+            <circle cx="44" cy="8" r="2.5" fill="#4dd0c4"/>
+            <circle cx="33" cy="32" r="2" fill="#4dd0c4"/>
+            <circle cx="55" cy="32" r="2" fill="#4dd0c4"/>
+            <line x1="44" y1="10" x2="33" y2="30" stroke="#4dd0c4" stroke-width="1" opacity="0.7"/>
+            <line x1="44" y1="10" x2="55" y2="30" stroke="#4dd0c4" stroke-width="1" opacity="0.7"/>
+            <text x="74" y="32" font-family="Montserrat,sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="1">AXIOM</text>
+            <text x="75" y="46" font-family="Montserrat,sans-serif" font-size="9" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="2.5">RESEARCH GROUP</text>
+          </svg>
         </a>
-        <p>Nova Research Group delivers actionable insights through rigorous market research methodologies, helping businesses make informed decisions worldwide.</p>
+        <p>Axiom Research Group delivers actionable insights through rigorous market research methodologies, helping businesses make informed decisions worldwide.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
@@ -167,7 +234,7 @@ function renderFooter(r) {
           <li><a href="${r}our-approach.html">Our Approach</a></li>
           <li><a href="${r}skills-services.html">Skills &amp; Services</a></li>
           <li><a href="${r}market-research.html">Market Research</a></li>
-          <li><a href="${r}about-us.html">About NRG</a></li>
+          <li><a href="${r}about-us.html">About ARG</a></li>
           <li><a href="${r}contact-nrg.html">Contact</a></li>
         </ul>
       </div>
@@ -187,13 +254,13 @@ function renderFooter(r) {
         <h4>Contact</h4>
         <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Buffalo, NY, USA</span></div>
         <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+17752989262">+1 (775) 298-9262</a></div>
-        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:novaresearchgroup@novaresearchgroup.site">novaresearchgroup@novaresearchgroup.site</a></div>
-        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:support@novaresearchgroup.site">support@novaresearchgroup.site</a></div>
-        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:info@novaresearchgroup.site">info@novaresearchgroup.site</a></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:axiomresearchgroup@axiomresearchgroup.site">axiomresearchgroup@axiomresearchgroup.site</a></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:support@axiomresearchgroup.site">support@axiomresearchgroup.site</a></div>
+        <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:info@axiomresearchgroup.site">info@axiomresearchgroup.site</a></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Nova Research Group. All rights reserved. Designed by webflyit</p>
+      <p>© 2026 Axiom Research Group. All rights reserved. Designed by webflyit</p>
       <a href="#" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
   </div>
