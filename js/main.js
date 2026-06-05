@@ -82,7 +82,7 @@ function renderHeader(r) {
           </ul>
         </li>
         <li><a href="${r}surveys.html">Surveys</a></li>
-        <li><a href="${r}news.html">News</a></li>
+        <!-- News page hidden -->
         <li><a href="${r}blogs.html">Blogs</a></li>
         <li><a href="${r}about-us.html">About ARG</a></li>
       </ul>
@@ -146,7 +146,7 @@ function renderHeader(r) {
       </ul>
     </li>
     <li><a href="${r}surveys.html">Surveys</a></li>
-    <li><a href="${r}news.html">News</a></li>
+    <!-- News page hidden -->
     <li><a href="${r}blogs.html">Blogs</a></li>
     <li><a href="${r}about-us.html">About ARG</a></li>
   </ul>
@@ -184,7 +184,7 @@ function renderFooter(r) {
         <h4>Resources</h4>
         <ul class="footer-links">
           <li><a href="${r}blogs.html">Blogs</a></li>
-          <li><a href="${r}news.html">News</a></li>
+          <!-- News page hidden -->
           <li><a href="${r}privacy-policy.html">Privacy Policy</a></li>
           <li><a href="${r}terms-conditions.html">Terms &amp; Conditions</a></li>
           <li><a href="${r}dmca-policy.html">DMCA Policy</a></li>
