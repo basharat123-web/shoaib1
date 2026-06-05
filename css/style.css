@@ -159,6 +159,15 @@ p:last-child { margin-bottom: 0; }
 
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
 .logo-svg { height: 48px; width: auto; display: block; }
+/* Image-based logo (supports filenames with spaces) */
+.logo-img { height: 48px; width: auto; display: block; }
+/* Brand text next to image logo */
+.brand-text { display: flex; flex-direction: column; justify-content: center; line-height: 1; margin-left: 8px; }
+.brand-title { font-family: var(--font-head); font-size: 20px; font-weight: 800; color: var(--navy); letter-spacing: 1px; display: block; line-height: 1; }
+.brand-sub { font-family: var(--font-head); font-size: 9px; font-weight: 700; color: var(--primary); letter-spacing: 2.5px; margin-top: 2px; display: block; line-height: 1; }
+/* Footer-specific brand text color overrides */
+.footer .brand-title, .footer-brand-text .brand-title, .site-footer .brand-title { color: var(--white); }
+.footer .brand-sub, .footer-brand-text .brand-sub, .site-footer .brand-sub { color: rgba(255,255,255,0.75); }
 
 .main-nav { flex: 1; display: flex; justify-content: center; }
 .nav-list { display: flex; align-items: center; gap: 2px; }
